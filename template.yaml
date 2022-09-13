@@ -1,0 +1,13 @@
+
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  CodePipeline
+
+Transform:
+- AWS::Serverless-2016-10-31
+
+Resources:
+  MaeEksCodeCommit:
+    Type: AWS::Serverless::Application
+    Properties:
+      Location: './stacks/code-commit.yml'
